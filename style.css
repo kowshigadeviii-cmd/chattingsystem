@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+
+/* LOGIN */
+
+.login-container {
+    width: 400px;
+    max-width: 90%;
+    margin: 120px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.login-container h1 {
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background: #1d4ed8;
+}
+
+.users {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* CHAT */
+
+.chat-container {
+    width: 700px;
+    max-width: 95%;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.chat-header {
+    background: #2563eb;
+    color: white;
+    padding: 20px;
+}
+
+.chat-header h2 {
+    margin-bottom: 5px;
+}
+
+.user-section {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-section select {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.messages {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8fafc;
+}
+
+.message {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.time {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.empty {
+    text-align: center;
+    color: #888;
+    margin-top: 150px;
+}
+
+.message-box {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+.message-box input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.message-box button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.message-box button:hover {
+    background: #1d4ed8;
+}

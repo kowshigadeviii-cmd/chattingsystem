@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS chatdb;
+
+USE chatdb;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS messages (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sender VARCHAR(50) NOT NULL,
+    receiver VARCHAR(50) NOT NULL,
+    message TEXT NOT NULL,
+    message_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT IGNORE INTO users (username) VALUES
+('Kowshika'),
+('Arun'),
+('Priya');
